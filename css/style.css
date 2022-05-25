@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  .newsletter {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .fundementals {
+    width: 50%;
+  }
+}
+.column:hover {
+  transform: scale(1.05);
+  transition: 1.2s;
+  cursor: pointer;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 80px;
+}
+
+.wrapper1 {
+  background-image: url(img/showcase.svg);
+}
+
+/*# sourceMappingURL=style.css.map */
