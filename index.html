@@ -29,42 +29,39 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4 fixed-top">
+    <nav
+      class="navbar navbar-expand-md bg-dark navbar-dark py-0 py-sm-4 fixed-top"
+    >
       <div class="container">
         <a href="" class="navbar-brand">Front-End Course</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="#learn" class="nav-link">What You'll Learn</a>
-            </li>
-            <li class="nav-item">
-              <a href="#questions" class="nav-link">Questions</a>
-            </li>
-            <li class="nav-item">
-              <a href="#students " class="nav-link">Students</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+
+        <ul class="nav text-danger justify-content-center">
+          <li class="nav-item text-danger">
+            <a class="nav-link text-light" aria-current="page" href="#learn"
+              >What You'll Learn</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#questions">Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#students">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <!-- Showcase -->
     <section
-      class="showcase text-light p-5 p-lg-0 pt-0 pt-lg-3 text-center text-sm-start"
+      class="showcase text-light p-5 p-lg-0 pt-0 pt-lg-3 mt-4 mt-sm-0 text-center text-sm-start"
     >
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
+        <div
+          class="d-sm-flex align-items-center justify-content-between pt-3 pt-sm-0"
+        >
           <div>
             <h1>Become a <span class="text-warning">Web Developer</span></h1>
             <p class="lead my-4">
@@ -414,7 +411,7 @@
         <div
           class="row align-items-center justify-content-between gap-2 gap-md-2"
         >
-          <div class="col-md p-3">
+          <div class="col-md m-auto">
             <div id="map"></div>
           </div>
 
@@ -451,17 +448,5 @@
         </button>
       </div>
     </section>
-    <p>
-      <button
-        class="btn btn-primary"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseWidthExample"
-        aria-expanded="false"
-        aria-controls="collapseWidthExample"
-      >
-        Toggle width collapse
-      </button>
-    </p>
   </body>
 </html>

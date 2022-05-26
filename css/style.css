@@ -7,6 +7,12 @@
     width: 50%;
     height: 50%;
   }
+
+  body::before {
+    display: block;
+    content: "";
+    height: 20px;
+  }
 }
 @media (max-width: 768px) {
   .fundementals {
@@ -22,7 +28,7 @@
 body::before {
   display: block;
   content: "";
-  height: 80px;
+  height: 85px;
 }
 
 #map {
@@ -43,6 +49,37 @@ body::before {
 }
 .collapsible .collapsible--expanded .collapsible__content {
   max-height: 100vh;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding-top: 5rem;
+}
+.navBar img {
+  width: 40px;
+  height: 40px;
+}
+.navBar h1 {
+  font-size: 3rem;
+}
+.navBar ul {
+  list-style: none;
+}
+.navBar ul li {
+  display: inline;
+  padding: 0.8rem;
+  font-size: 2rem;
+}
+.navBar ul li a {
+  opacity: 0.7;
+}
+.navBar ul li a:hover {
+  transition: 0.3s ease-in;
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
