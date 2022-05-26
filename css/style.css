@@ -2,6 +2,11 @@
   .newsletter {
     width: 50%;
   }
+
+  .images img {
+    width: 50%;
+    height: 50%;
+  }
 }
 @media (max-width: 768px) {
   .fundementals {
@@ -20,8 +25,11 @@ body::before {
   height: 80px;
 }
 
-.wrapper1 {
-  background-image: url(img/showcase.svg);
+#map {
+  width: 40vh;
+  height: 40vh;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
