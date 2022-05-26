@@ -51,6 +51,9 @@
             <li class="nav-item">
               <a href="#students " class="nav-link">Students</a>
             </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -58,7 +61,7 @@
 
     <!-- Showcase -->
     <section
-      class="bg-dark text-light p-5 p-lg-0 pt-0 pt-lg-3 text-center text-sm-start"
+      class="showcase text-light p-5 p-lg-0 pt-0 pt-lg-3 text-center text-sm-start"
     >
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
@@ -235,73 +238,59 @@
       <div class="container">
         <h2 class="text-center mb-4">FAQ</h2>
 
-        <div class="accordion accordion-flush" id="questions">
-          <!-- Item1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-one"
+        <div class="collapsible">
+          <div
+            class="accordion accordion-flush collapsible--expanded"
+            id="questions"
+          >
+            <!-- Item1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed collapse-btn"
+                  type="button"
+                >
+                  Where to start
+                </button>
+              </h2>
+              <div
+                id="question-one"
+                class="accordion-collapse collapsible__content"
               >
-                Where to start
-              </button>
-            </h2>
-            <div
-              id="question-one"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                dolore consequatur soluta dicta amet officia mollitia
-                voluptatibus molestias inventore eos?
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                  dolore consequatur soluta dicta amet officia mollitia
+                  voluptatibus molestias inventore eos?
+                </div>
               </div>
             </div>
-          </div>
-          <!-- item 2-->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-two"
-              >
-                How I enroll?
-              </button>
-            </h2>
-            <div
-              id="question-two"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                dolore consequatur soluta dicta amet officia mollitia
-                voluptatibus molestias inventore eos?
+            <!-- item 2-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button">
+                  How I enroll?
+                </button>
+              </h2>
+              <div id="question-two" class="accordion-collapse">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                  dolore consequatur soluta dicta amet officia mollitia
+                  voluptatibus molestias inventore eos?
+                </div>
               </div>
             </div>
-          </div>
-          <!-- item3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-three"
-              >
-                How much money I will earn?
-              </button>
-            </h2>
-            <div
-              id="question-three"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">Lots of MONEY</div>
+            <!-- item3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button">
+                  How much money I will earn?
+                </button>
+              </h2>
+              <div id="question-three" class="accordion-collapse">
+                <div class="accordion-body">
+                  Do your best, money comes later
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -420,7 +409,7 @@
 
     <!-- Contact info -->
 
-    <section class="p-5">
+    <section id="contact" class="p-5">
       <div class="container">
         <div
           class="row align-items-center justify-content-between gap-2 gap-md-2"
@@ -462,5 +451,17 @@
         </button>
       </div>
     </section>
+    <p>
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseWidthExample"
+        aria-expanded="false"
+        aria-controls="collapseWidthExample"
+      >
+        Toggle width collapse
+      </button>
+    </p>
   </body>
 </html>

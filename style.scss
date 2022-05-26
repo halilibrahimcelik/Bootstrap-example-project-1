@@ -47,3 +47,23 @@ body{
     border-radius: 10px;
     margin: 0 auto;
 }
+
+.showcase{
+    background-color: rgb(139, 137, 137);
+}
+
+  .collapsible{
+        
+        .collapsible__content{
+            max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s;
+            
+        }
+        .collapsible--expanded .collapsible__content{   
+            max-height: 100vh;
+
+         
+        }
+
+    }

@@ -20,7 +20,7 @@ class Map {
 
     const map = new google.maps.Map(document.getElementById("map"), {
       center: this.coordinates,
-      zoom: 6,
+      zoom: 16,
     });
 
     new google.maps.Marker({
@@ -49,3 +49,12 @@ class Map {
 }
 
 new Map();
+
+const collapsible = document.querySelector(".collapsible");
+console.log(collapsible);
+const toggleBtn = document.querySelector(".collapse-btn");
+
+toggleBtn.addEventListener("click", () => {
+  collapsible.classList.toggle("collapsible--expanded");
+  console.log("clicked");
+});
